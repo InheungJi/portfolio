@@ -1,0 +1,103 @@
+body {
+	background-color: rgb(51, 51, 51);
+	color: white;
+}
+.var-highlight {
+	color: #4655db;
+}
+
+.string-highlight {
+	color: rgb(108, 255, 103);
+}
+
+.bold-italic {
+	font-weight: bold;
+	font-style: italic;
+}
+.arrow {
+	font-size: 1em;
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	float: right;
+	margin-right: 3em;
+}
+#typewriter {
+	font-size: 2em;
+	margin: 0;
+	font-family: "Courier New";
+	line-height: 1.4em;
+}
+#typewriter h1 {
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+}
+#typewriter:after {
+	content: "|";
+	-webkit-animation: blink 600ms linear infinite alternate;
+	animation: blink 600ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* @keyframes blink {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
+
+/* delete effect */
+
+.output {
+	text-align: center;
+	font-family: "Source Code Pro", monospace;
+	color: rgb(250, 250, 100);
+}
+.output h1 {
+	font-size: 30px;
+}
+
+/* Cursor Styling */
+.cursor::after {
+	content: "";
+	display: inline-block;
+	margin-left: 3px;
+	background-color: white;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+h1.cursor::after {
+	height: 24px;
+	width: 13px;
+}
+
+p.cursor::after {
+	height: 13px;
+	width: 6px;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
