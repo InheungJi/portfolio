@@ -309,7 +309,6 @@ section.contents {
 
 .project-img {
 	display: grid;
-
 	place-items: center;
 }
 
@@ -602,18 +601,21 @@ section.contents {
 	}
 }
 
-@media screen and (max-width: 380px) {
-	* {
-		box-sizing: border-box;
-	}
+@media screen and (max-width: 420px) {
 	nav {
 		height: 150px;
-		width: 380px;
+		width: 420px;
 		position: fixed;
 		z-index: 10;
 		display: grid;
 		grid-template-rows: auto auto;
 	}
+
+	nav ul li a:hover {
+		color: white;
+		padding: 0.5em;
+	}
+
 	#title,
 	.link {
 		display: none;
@@ -657,5 +659,9 @@ section.contents {
 	#contacts {
 		left: 0;
 		top: 60px;
+	}
+
+	.project-img img {
+		height: auto;
 	}
 }
