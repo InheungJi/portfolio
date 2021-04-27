@@ -601,7 +601,7 @@ section.contents {
 	}
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
 	nav {
 		height: 150px;
 		width: 420px;
