@@ -662,6 +662,7 @@ section.contents {
 	}
 
 	.project-img img {
-		height: auto;
+		width: fit-content;
+		height: fit-content;
 	}
 }
