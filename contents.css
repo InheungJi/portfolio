@@ -30,7 +30,7 @@ nav {
 	width: 200px;
 	background-color: rgba(133, 192, 214);
 	line-height: 1em;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	box-shadow: 0px 5px 0px black;
 }
@@ -599,5 +599,63 @@ section.contents {
 		width: 100%;
 		height: 100%;
 		background: rgb(51, 60, 42);
+	}
+}
+
+@media screen and (max-width: 380px) {
+	* {
+		box-sizing: border-box;
+	}
+	nav {
+		height: 150px;
+		width: 380px;
+		position: fixed;
+		z-index: 10;
+		display: grid;
+		grid-template-rows: auto auto;
+	}
+	#title,
+	.link {
+		display: none;
+	}
+	.name-title {
+		padding: 0.5em;
+		margin: 0.1em;
+		height: 1em;
+	}
+	#name {
+		text-align: center;
+	}
+	.nav-list {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(2, auto);
+		place-items: center;
+
+		margin: 0px;
+		padding: 0px;
+	}
+	.nav-item {
+		font: 1em;
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+		margin: 0;
+	}
+
+	section.contents {
+		position: relative;
+		top: 100px;
+		margin: 0px;
+		width: 100%;
+		padding: 0;
+		left: 0;
+	}
+
+	#about,
+	#projects,
+	#experience,
+	#education,
+	#contacts {
+		left: 0;
+		top: 60px;
 	}
 }
