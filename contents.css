@@ -180,7 +180,6 @@ section.contents {
 	line-height: 1.5em;
 	text-indent: 5%;
 	margin-bottom: 0.5em;
-	text-transform: capitalize;
 }
 
 @media screen and (max-width: 960px) {
