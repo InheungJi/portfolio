@@ -94,5 +94,10 @@ p.cursor::after {
 	}
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 1280px) {
 }

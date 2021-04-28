@@ -8,9 +8,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-html {
 	scroll-behavior: smooth;
 }
 
@@ -332,7 +329,7 @@ section.contents {
 .project-explain p {
 	text-indent: 5%;
 }
-/* experience section */
+/* -----------------------experience section---------------------------------- */
 #experience {
 	height: auto;
 }
@@ -418,6 +415,7 @@ section.contents {
 	position: relative;
 	border-radius: 6px;
 	box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2);
+	min-width: 300px;
 }
 
 @media screen and (max-width: 960px) {
@@ -476,14 +474,32 @@ section.contents {
 }
 .experience-detail {
 	color: white;
-	font-size: 20px;
+	font-size: 1em;
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	left: 50%;
+	width: 80%;
+	height: auto;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	text-align: center;
+	overflow: auto;
+}
+
+@media screen and (max-width: 1400px) {
+	.experience-detail {
+		top: 70%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.experience-detail {
+		top: 80%;
+	}
+}
+@media screen and (max-width: 960px) {
+	.experience-detail {
+		top: 70%;
+	}
 }
 
 /* education section */
@@ -653,18 +669,18 @@ section.contents {
 		grid-template-rows: repeat(2, auto);
 		place-items: center;
 
-		margin: 0.5em;
+		margin: 1em;
 		padding: 1em;
 	}
 	.nav-item {
 		font: 1em;
 		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-		margin: 0;
+		margin: 0.5em;
 	}
 
 	section.contents {
 		position: relative;
-		top: 100px;
+		top: 2%;
 		margin: 0px;
 		width: auto;
 		padding: 0 0.5em;
