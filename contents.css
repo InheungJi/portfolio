@@ -134,7 +134,7 @@ nav.fill ul li a:hover::after {
 /* contents section */
 section.contents {
 	margin-left: 160px;
-	width: 90%;
+	width: 100%;
 	height: auto;
 	padding: 1.5em 1em 1.5em 1em;
 	line-height: 2em;
@@ -162,6 +162,7 @@ section.contents {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	width: 100%;
 	height: auto;
 }
 .about-image {
@@ -204,6 +205,8 @@ section.contents {
 	background-color: rgb(176, 210, 243);
 	margin-top: 1em;
 	padding: 1em;
+	overflow: auto;
+	text-align: center;
 }
 
 .about-header {
@@ -232,7 +235,7 @@ section.contents {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 0.5em 0;
+	padding: 1em 0;
 }
 
 .projects-header {
@@ -503,7 +506,7 @@ section.contents {
 	padding: 0.5em;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
 	#ryerson,
 	#kyunghee,
 	#codecademy {
@@ -511,7 +514,7 @@ section.contents {
 	}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 	#ryerson,
 	#kyunghee,
 	#codecademy {
@@ -601,14 +604,27 @@ section.contents {
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
+	* {
+		font-size: 12px;
+		/* text-align: center; */
+	}
+	html {
+		width: 100%;
+	}
+	.main-container {
+		display: grid;
+		grid-template-rows: auto auto;
+	}
 	nav {
-		height: 150px;
-		/* width: 100%; */
+		height: auto;
+		width: 100%;
 		position: fixed;
 		z-index: 10;
 		display: grid;
 		grid-template-rows: auto auto;
+		grid-row-gap: 1em;
+		/* place-items: center; */
 	}
 
 	nav ul li a:hover {
@@ -630,12 +646,15 @@ section.contents {
 	}
 	.nav-list {
 		display: grid;
+		grid-gap: 1em;
+		/* height: 100px; */
+		width: 100%;
 		grid-template-columns: repeat(3, auto);
 		grid-template-rows: repeat(2, auto);
 		place-items: center;
 
-		margin: 0px;
-		padding: 0px;
+		margin: 0.5em;
+		padding: 1em;
 	}
 	.nav-item {
 		font: 1em;
@@ -647,9 +666,8 @@ section.contents {
 		position: relative;
 		top: 100px;
 		margin: 0px;
-		width: 100%;
-		padding: 0;
-		left: 0;
+		width: auto;
+		padding: 0 0.5em;
 	}
 
 	#about,
