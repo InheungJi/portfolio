@@ -8,25 +8,410 @@
 		<title>Inheung Daniel Ji</title>
 	</head>
 	<body>
-		<pre id="typewriter">
-            <h1>Welcome! Nice to meet you!</h1>
-            <span class="var-highlight">var</span> object = {
-                name: <span class="string-highlight bold-italic">'Inheung Daniel Ji'</span>,
-                type: [<span class="string-highlight">'Full-Stack Developer','Software Engineer'</span>],
-                messages:[<span class="string-highlight">'If you want to know more about me'</span>,
-                            <span class="string-highlight">'Click the next arrow below.'</span> ]             
-            };
-            <a href="contents.html" class="string-highlight arrow">Next &#187;</a></pre>
+		<div class="main-container">
+			<nav class="fill">
+				<div class="name-title">
+					<h1 id="name"><a href="./index.html">Inheung Daniel Ji</a></h1>
+					<hr />
+					<div id="title">
+						<p class="title">Full-Stack Developer</p>
+						<p class="title">Software Engineer</p>
+					</div>
+				</div>
+				<div class="link">
+					<a href="https://github.com/InheungJi" target="_blank"
+						><img src="./img/github.png" alt="github"
+					/></a>
+					<a
+						href="https://www.linkedin.com/in/inheung-daniel-ji"
+						target="_blank"
+						><img src="./img/linkedin.png" alt="linkedin"
+					/></a>
+				</div>
 
-		<!-- delete effect -->
-		<div class="container py-5">
-			<div class="output" id="output">
-				<h1 class="cursor"></h1>
-				<p></p>
-			</div>
+				<ul class="nav-list">
+					<li class="nav-item"><a href="#about">About</a></li>
+					<li class="nav-item"><a href="#projects">Projects</a></li>
+					<li class="nav-item"><a href="#experience">Experience</a></li>
+					<li class="nav-item"><a href="#education">Education</a></li>
+					<li class="nav-item"><a href="#contacts">Contacts</a></li>
+					<li class="nav-item">
+						<a
+							href="https://drive.google.com/file/d/1mcX9zOL3IGP9DUwIt56zjdMtC7A0I-Wt/view?usp=sharing"
+							target="_blank"
+							>Resume</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<!-- contents section -->
+			<section class="contents">
+				<!-- about section -->
+				<div id="about">
+					<div class="about-header">
+						<h2>Hi! I am Inheung Daniel Ji.</h2>
+						<h4>Here's little about me.</h4>
+					</div>
+					<div class="about-container">
+						<div class="about-image">
+							<img src="./img/daniel.png" alt="It's me!" />
+						</div>
+						<div class="about-content">
+							<p>
+								When I was 10 years old, I had a chance to learn about building
+								web board with using Dreamweaver. I remember the moment that I
+								saw HTML. I totally didn't understand for it and it seemed like
+								foreingn language. So, I only tried to write similar to
+								teacher's code. In the end, I could make an ugly web board. It
+								was my first coding. Even though it was almost clone coding, I
+								can tell that It was the most excited moment I've ever been.
+							</p>
+							<p>
+								While I have worked in Korean Army as an officer, I had thought
+								deeply for my future. I tried to find what I want to do for my
+								entire life. I realized that I couldn't forget the feeling when
+								I create useful things like web board that I made before. So, I
+								decided to study about computer and started to prepare for that
+								while working as an network security engineer.
+							</p>
+							<p>
+								After preparing, I started to study for computer science from
+								2016 at Ryerson University in Toronto and I completed it in
+								2020. I learned a lot like Data structure, Algorithms, computer
+								operation system etc.
+							</p>
+							<p>
+								In order to combine the knowledge from university with the
+								knowledge I need to use in real field, I signed up for
+								Codecademy and I am digging and absorbing the skills from there.
+							</p>
+
+							<div class="about-skills">
+								A few of the languages and frameworks I've worked in:
+								<table>
+									<tr>
+										<th>Front-End:</th>
+										<td>HTML</td>
+										<td>CSS</td>
+										<td>JavaScript</td>
+										<td>ReactJs</td>
+									</tr>
+									<tr>
+										<th>Back-End:</th>
+										<td>Java</td>
+										<td>Python</td>
+										<td>Flask</td>
+									</tr>
+									<tr>
+										<th>Database:</th>
+										<td>SQLite</td>
+										<td>Oracle</td>
+										<td>MySQL</td>
+									</tr>
+									<tr>
+										<th>Data Analysis:</th>
+										<td>Pandas</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- projects section -->
+				<div id="projects">
+					<div class="projects-header">
+						<h1>Here are some projects I've worked</h1>
+					</div>
+					<div class="projects-container">
+						<div class="full-stack">
+							<div class="full-stack-header">
+								<h2>Front-End / Back-End</h2>
+							</div>
+							<div class="full-stack-content">
+								<div class="project">
+									<div class="project-header">
+										<h3>Interview Practice Web Application</h3>
+									</div>
+									<div class="project-content">
+										<div class="project-img img-grid-columns">
+											<img
+												src="./img/interview-index.png"
+												alt="interview index"
+											/>
+											<img
+												src="./img/interview-practice.png"
+												alt="interview practice"
+											/>
+										</div>
+										<div class="project-explain">
+											<ul class="stress">
+												<li>Languages: HTML5, CSS3, JavaScript</li>
+											</ul>
+										</div>
+									</div>
+									<div class="links">
+										<a href="http://"
+											><button class="btn-link">code pen</button></a
+										>
+										<a
+											href="https://github.com/InheungJi/interview-practice.git"
+											target="_blank"
+											><button class="btn-link">Git hub</button></a
+										>
+										<a href="http://"
+											><button class="btn-link">detail</button></a
+										>
+									</div>
+								</div>
+								<div class="project">
+									<div class="project-header">
+										<h3>To-Do Web Application with Flask/SQLite</h3>
+									</div>
+									<div class="project-content">
+										<div class="project-img img-grid-rows">
+											<img src="./img/todo-1.png" alt="Todo-login" />
+											<img src="./img/todo-2.png" alt="todo" />
+										</div>
+										<div class="project-explain">
+											<ul class="stress">
+												<li>Languages: Python3, Flask, HTML5, CSS3</li>
+												<li>DBMS: SQLite</li>
+											</ul>
+										</div>
+									</div>
+									<div class="links">
+										<a
+											href="https://github.com/InheungJi/todo-flask.git"
+											target="_blank"
+											><button class="btn-link">Git hub</button></a
+										>
+										<a href="http://"
+											><button class="btn-link">Detail</button></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="software-engineer">
+							<div class="software-header">
+								<h2>Software</h2>
+							</div>
+							<div class="software-content">
+								<div class="project">
+									<div class="project-header">
+										<h3>Car Rental System</h3>
+									</div>
+									<div class="project-content">
+										<div class="project-img">
+											<img src="./img/car-rental.png" alt="car rental" />
+										</div>
+
+										<div class="project-explain">
+											<p>
+												This Car Rental Database Management System is
+												responsible for maintaining the relevant information
+												necessary for a car rental business. The primary end
+												users of our system are the employees who are going to
+												be using our system to manage information relating to
+												running a car rental business.
+											</p>
+											<ul class="stress">
+												<li>Languages: Java(Swing), SQL, Bash script</li>
+												<li>DBMS: Oracle</li>
+											</ul>
+											<div class="links">
+												<a
+													href="https://github.com/InheungJi/CPS510_database_system.git"
+													target="_blank"
+													><button class="btn-link">Git hub</button></a
+												>
+												<a href="http://"
+													><button class="btn-link">Detail</button></a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Experience section -->
+				<div id="experience">
+					<div class="experience-header">
+						<h2>Here is some my work experiences.</h2>
+					</div>
+					<div class="experience-timeline">
+						<div class="experience-container left">
+							<div class="experience-content">
+								<img src="./img/ikea.png" alt="ikea" />
+								<h3>IKEA | Toronto, Canada</h3>
+								<div class="experience-period">
+									September 2017 - January 2020
+								</div>
+								<div class="experience-title">
+									Self-Serve Furniture Area Co-worker
+								</div>
+								<div class="overlay">
+									<div class="experience-detail">
+										I worked at IKEA for around 2 years during my study. It was
+										enough tough to work and study together. But the biggest
+										reason why I decided to work there is to improve my English
+										skills. While interfacing with a lot of customers, I could
+										get confident in speaking English. <br />
+										The things that I learned and got experiences are:
+										<ul>
+											<li class="stress">- Maintaining of products</li>
+											<li class="stress">- Customer service</li>
+											<li class="stress">- Marketing</li>
+											<li class="stress">- Teamwork</li>
+										</ul>
+										It was a wonderful experience and I love the memory that I
+										spent there.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="experience-container right">
+							<div class="experience-content">
+								<img src="./img/uni.png" alt="unipoint" />
+								<h3>Unipoint Corp. | Seoul, South Korea</h3>
+								<div class="experience-period">March 2015 - April 2016</div>
+								<div class="experience-title">Network Security Engineer</div>
+								<div class="overlay">
+									<div class="experience-detail">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+										Atque explicabo numquam iure expedita sunt quia, non ut
+										necessitatibus dolores adipisci est animi autem. Asperiores
+										quo dignissimos deserunt neque quia ipsum.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="experience-container left">
+							<div class="experience-content">
+								<img src="./img/army.png" alt="unipoint" />
+								<h3>Korea Army | Paju, South Korea</h3>
+								<div class="experience-period">March 2011 - June 2013</div>
+								<div class="experience-title">
+									Officer (platoon leader, company executive officer)
+								</div>
+								<div class="overlay">
+									<div class="experience-detail">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+										Atque explicabo numquam iure expedita sunt quia, non ut
+										necessitatibus dolores adipisci est animi autem. Asperiores
+										quo dignissimos deserunt neque quia ipsum.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Education section -->
+				<div id="education">
+					<div class="education-header">
+						<h2>I am always hungry to learn new knowledge and skills.</h2>
+						<h3>Here is something I've learned.</h3>
+					</div>
+					<div class="education-container">
+						<div id="codecademy">
+							<img src="./img/codecademy.jpg" alt="codecademy" />
+							<h3 class="major">Full-Stack Career Path (2020 - Present)</h3>
+							<div class="course-list">
+								<h4>- Taken certificate:</h4>
+								<ul>
+									<li>Build Python Web Apps with Flask</li>
+									<li>Learn Data Analysis with Pandas</li>
+									<li>Learn Complex Data Structures</li>
+									<li>Linear Data Structures</li>
+									<li>Learn Python 3</li>
+									<li>Learn Responsive Design</li>
+								</ul>
+							</div>
+						</div>
+						<div id="ryerson">
+							<img src="./img/Ryerson-rgb.png" alt="ryerson" />
+							<h3 class="major">BS of Computer Science (2016 - 2020)</h3>
+							<div class="course-list">
+								<h4>- Taken course list:</h4>
+								<ul>
+									<li>Computer Science 1,2</li>
+									<li>Computer Organization 1,2</li>
+									<li>Introduction to C and UNIX</li>
+									<li>Database System 1,2</li>
+									<li>Computer Security</li>
+									<li>Algorithms</li>
+									<li>Data Structures</li>
+									<li>Intro to Software Engineering</li>
+									<li>Operating Systems 1</li>
+									<li>Computer Networks 1</li>
+									<li>Web Systems Development</li>
+									<li>Artificial Intelligence</li>
+									<li>Creating big data system</li>
+									<li>Software Tools for Startups</li>
+									<li>Intro to Multimedia Systems</li>
+								</ul>
+							</div>
+						</div>
+						<div id="kyunghee">
+							<img src="./img/kyunghee.png" alt="kyunghee" />
+							<h3 class="major">BA of International Studies (2006 - 2011)</h3>
+							<div class="course-list">
+								<h4>- Taken course list:</h4>
+								<ul>
+									<li>Introduction to Economics1, 2</li>
+									<li>Introduction to Psychology</li>
+									<li>Introduction to Political Science</li>
+									<li>International Finance</li>
+									<li>International Organization</li>
+									<li>International Security</li>
+									<li>International Political Economy/li></li>
+									<li>Global Marketing</li>
+									<li>Introduction to International Studies</li>
+									<li>International Business</li>
+									<li>Microeconomics</li>
+									<li>Macroeconomics</li>
+									<li>Basics of Quantitative Analysis</li>
+									<li>Understanding International Law</li>
+									<li>Chinese Foreign Policy</li>
+									<li>International Negotiations</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Contacts section -->
+				<div id="contacts">
+					<h2>Do you want to contact with me?</h2>
+					<p>
+						I'm always looking for new and interesting projects and
+						opportunities. Let's make the world better together with code.
+					</p>
+					<p>
+						Don't hegitate! Send me an email at
+						<span class="stress">
+							<a href="mailto:fl.inheung@gmail.com"
+								>fl.inheung@gmail.com</a
+							></span
+						>
+					</p>
+					<div class="link">
+						<a href="https://github.com/InheungJi" target="_blank"
+							><img src="./img/github.png" alt="github"
+						/></a>
+						<a
+							href="https://www.linkedin.com/in/inheung-daniel-ji"
+							target="_blank"
+							><img src="./img/linkedin.png" alt="linkedin"
+						/></a>
+					</div>
+				</div>
+			</section>
 		</div>
-
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="index.js"></script>
 	</body>
 </html>
