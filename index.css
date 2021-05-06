@@ -182,21 +182,6 @@ section.contents {
 	margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 960px) {
-	.about-container {
-		flex-direction: column;
-	}
-	.about-image {
-		width: 100%;
-	}
-
-	.about-content {
-		width: 100%;
-		padding: 1em;
-		height: auto;
-	}
-}
-
 .about-skills {
 	background-color: rgb(176, 210, 243);
 	margin-top: 1em;
@@ -252,16 +237,6 @@ section.contents {
 	flex-wrap: wrap;
 	flex: 0 1 500px;
 	border-radius: 15px;
-}
-@media screen and (max-width: 960px) {
-	.full-stack-content,
-	.software-content {
-		flex-direction: column;
-	}
-	.project {
-		width: 100%;
-		margin: 1em;
-	}
 }
 
 .full-stack-header,
@@ -417,33 +392,6 @@ section.contents {
 	min-width: 300px;
 }
 
-@media screen and (max-width: 960px) {
-	.experience-timeline::after {
-		left: 31px;
-	}
-	.experience-container {
-		width: 100%;
-		padding-left: 70px;
-		padding-right: 25px;
-	}
-
-	.experience-container::before {
-		left: 60px;
-		border: medium solid white;
-		border-width: 10px 10px 10px 0;
-		border-color: transparent white transparent transparent;
-	}
-
-	.left::after,
-	.right::after {
-		left: 15px;
-	}
-
-	.right {
-		left: 0%;
-	}
-}
-
 .experience-period,
 .experience-title {
 	font-weight: bold;
@@ -485,22 +433,6 @@ section.contents {
 	overflow: auto;
 }
 
-@media screen and (max-width: 1400px) {
-	.experience-detail {
-		top: 70%;
-	}
-}
-@media screen and (max-width: 1280px) {
-	.experience-detail {
-		top: 80%;
-	}
-}
-@media screen and (max-width: 960px) {
-	.experience-detail {
-		top: 70%;
-	}
-}
-
 /* education section */
 .education-container {
 	display: flex;
@@ -521,21 +453,6 @@ section.contents {
 	padding: 0.5em;
 }
 
-@media screen and (max-width: 1024px) {
-	#ryerson,
-	#kyunghee,
-	#codecademy {
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	#ryerson,
-	#kyunghee,
-	#codecademy {
-		width: 100%;
-	}
-}
 #ryerson h3,
 #kyunghee h3 {
 	text-align: center;
@@ -575,7 +492,7 @@ section.contents {
 #contacts .link img {
 	margin: 0.5em 1em 0 0;
 }
-/* animation */
+/*----------------------------- animation ---------------------------------*/
 @keyframes slideIn {
 	0% {
 		transform: translateX(400px) scale(0.2);
@@ -618,6 +535,8 @@ section.contents {
 		background: rgb(51, 60, 42);
 	}
 }
+
+/* --------------Responsive web----------------------------------- */
 
 @media screen and (max-width: 420px) {
 	* {
@@ -698,4 +617,81 @@ section.contents {
 		width: fit-content;
 		height: fit-content;
 	} */
+}
+
+@media screen and (max-width: 960px) {
+	.about-container {
+		flex-direction: column;
+	}
+	.about-image {
+		width: 100%;
+	}
+
+	.about-content {
+		width: 100%;
+		padding: 1em;
+		height: auto;
+	}
+
+	.full-stack-content,
+	.software-content {
+		flex-direction: column;
+	}
+	.project {
+		width: 100%;
+		margin: 1em;
+	}
+
+	.experience-timeline::after {
+		left: 31px;
+	}
+	.experience-container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	.experience-container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	.left::after,
+	.right::after {
+		left: 15px;
+	}
+
+	.right {
+		left: 0%;
+	}
+
+	.experience-detail {
+		top: 70%;
+	}
+
+	#ryerson,
+	#kyunghee,
+	#codecademy {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.experience-detail {
+		top: 80%;
+	}
+
+	#ryerson,
+	#kyunghee,
+	#codecademy {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.experience-detail {
+		top: 70%;
+	}
 }
