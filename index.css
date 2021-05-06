@@ -409,28 +409,28 @@ section.contents {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: auto;
 	opacity: 0;
 	transition: 0.5s ease;
 	background-color: rgb(25, 64, 77);
+	overflow: auto;
 }
 .experience-content:hover .overlay {
 	opacity: 1;
-	overflow: auto;
 }
 .experience-detail {
 	color: white;
 	font-size: 1em;
 	position: absolute;
-	top: 65%;
+	top: 40%;
 	left: 50%;
-	width: 80%;
+	bottom: 0;
 	height: auto;
+	width: 90%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	overflow: auto;
 }
 
 /* education section */
@@ -491,6 +491,11 @@ section.contents {
 }
 #contacts .link img {
 	margin: 0.5em 1em 0 0;
+}
+
+/* --------------color--------------------- */
+.bright-stress {
+	color: rgb(248, 115, 113);
 }
 /*----------------------------- animation ---------------------------------*/
 @keyframes slideIn {
@@ -638,7 +643,7 @@ section.contents {
 		flex-direction: column;
 	}
 	.project {
-		width: 100%;
+		width: 90%;
 		margin: 1em;
 	}
 
@@ -660,15 +665,11 @@ section.contents {
 
 	.left::after,
 	.right::after {
-		left: 15px;
+		left: 0px;
 	}
 
 	.right {
 		left: 0%;
-	}
-
-	.experience-detail {
-		top: 70%;
 	}
 
 	#ryerson,
@@ -679,19 +680,9 @@ section.contents {
 }
 
 @media screen and (max-width: 1280px) {
-	.experience-detail {
-		top: 80%;
-	}
-
 	#ryerson,
 	#kyunghee,
 	#codecademy {
 		width: 80%;
-	}
-}
-
-@media screen and (max-width: 1400px) {
-	.experience-detail {
-		top: 70%;
 	}
 }
